@@ -87,7 +87,7 @@ button{
 }
 .choice button:hover {
   color: #e67643;
-  width: 100%;
+  width: 30%;
 }
 
 .back {
