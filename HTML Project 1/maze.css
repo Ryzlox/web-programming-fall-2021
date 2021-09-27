@@ -62,6 +62,7 @@ flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
+
   }
 button{
    cursor: pointer;
@@ -76,14 +77,20 @@ button{
    border: none;
    padding: 24px 48px;
 }
+.move{
+   transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
 .choice button {
   color: #424550;
   background-color: #f1f3f5;
   margin: 0.875rem;
+  width: 200px;
+   height: 100px;
+   transition: width 2s;
 }
 .choice button:hover {
-  background-color: #dbdee04d;
   color: #e67643;
+  width: 100%;
 }
 
 .back {
