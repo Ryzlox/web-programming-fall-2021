@@ -77,9 +77,6 @@ button{
    border: none;
    padding: 24px 48px;
 }
-.move{
-   transform: matrix(1, -0.3, 0, 1, 0, 0);
-}
 .choice button {
   color: #424550;
   background-color: #f1f3f5;
