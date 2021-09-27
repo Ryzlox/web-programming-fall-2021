@@ -27,7 +27,7 @@ margin: 0;
 padding: 0;
 }
 .header{
-padding: 1.5rem;
+/*padding: 1.5rem;*/
   display: flex;
   justify-content: center;
   width: 100%;
@@ -57,11 +57,11 @@ flex-direction: column;
   font-size: 30px;
 }
 .choice{
-  height: 100%;
+
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
 
   }
 button{
@@ -81,8 +81,8 @@ button{
   color: #424550;
   background-color: #f1f3f5;
   margin: 0.875rem;
-  width: 200px;
-   height: 100px;
+  width: 300px;
+
    transition: width 2s;
 }
 .choice button:hover {
