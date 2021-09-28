@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html>
+    <head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dark Cave</title>
+		<link rel="stylesheet" href="maze.css"/>
+    </head>
 <body>
 
-<audio controls autoplay>
 
-  <source src="mixkit-crickets-singing-in-a-jungle-at-night-2416.mp3" type="audio/mpeg">
-  
-  Your browser does not support the audio element.
-  
-  </audio>
 
-<h1>Adventure Maze Game</h1>
+<div>
+    <div class="container">
+        <div class="header">
+        <h1>Adventure Maze Game</h1>
+	</div>
 
 <img src="pond.png" alt="pond" width="800" height="600">
 
-<p>You continued forward.</p>
-<p>You come to a large grassy area near a pond of water. You can see a hole in one of the walls of the pond, but you also see another pathway that seems to lead somewhere. </p>
-<p>Do you take the pathway or do you try and investigate the hole?</p>
+<div class="question">
+<p>You continued forward.<br>
+You come to a large grassy area near a pond of water. You can see a hole in one of the walls of the pond, but you also see another pathway that seems to bend around a corner and lead somewhere.
+<br>Do you take the pathway or do you try and investigate the hole?</p>
+</div>
 
-<a href="D3.html">Take the pathway</a>
-<a href="D4.html">Swim through the hole</a>
-<a href="B1.html">Back</a>
+<div class="choice">
+<button><a href="D3.html">Take the pathway around the corner</a></button>
+<button><a href="D4.html">Swim through the hole</a></button> </div>
+
+</div>
+    <audio controls autoplay>
+
+        <source src="mixkit-crickets-singing-in-a-jungle-at-night-2416.mp3" type="audio/mpeg">
+
+        Your browser does not support the audio element.
+
+    </audio>
+    <button class="back"><a href="B1.html">Back</a></button>
+</div>
+
 </body>
 </html>
