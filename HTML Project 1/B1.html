@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Left path</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Left Path</title>
+    <link rel="stylesheet" href="maze.css"/>
+</head>
+
 <body>
 
-<audio controls autoplay>
 
-  <source src="wind-howl-exterior-1276.mp3" type="audio/mpeg">
-  
-  Your browser does not support the audio element.
-  
-  </audio>
-
-<h1>Adventure Maze Game</h1>
-
+<div>
+    <div class="container">
+        <div class="header">
+        <h1>Adventure Maze Game</h1>
+        </div>
 <img src="stairs.png" alt="Stairs" width="500" height="600">
 
+<div class="question">
 <p>You took the left path.</p>
 <p>You keep walking down until you find a staircase leading downwards.</p>
 <p> Do you take the staircase down or do you continue forward?</p>
+</div>
 
-<a href="C1.html">Take the staircase down</a>
-<a href="C2.html">Continue forward</a>
-<a href="A1.html">Back</a>
+<div class="choice">
+ <button><a href="C1.html">Take the staircase down</a></button>
+ <button><a href="C2.html">Continue forward</a></button>
+ <button class="back"><a href="A1.html">Back</a></button>
+ 
+ <audio controls autoplay>
+
+  <source src="wind-howl-exterior-1276.mp3" type="audio/mpeg">
+  
+ browser does not support the audio
+  
+  </audio>
+  
+</div>
+</div>
 </body>
 </html>
