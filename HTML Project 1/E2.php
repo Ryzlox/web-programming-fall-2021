@@ -14,9 +14,9 @@ session_start();
 	
 	<?php
 	if(isset($_SESSION['gem 1']) && isset($_SESSION['gem 2']) && isset($_SESSION['gem 3']) && isset($_SESSION['gem 4'])) {
-		echo "<p>All gems are available!</p><br>"
+		echo "<p>All gems are available!</p><br>";
 	} else {
-		echo "<p>You have not found enough gems!</p><br>"
+		echo "<p>You have not found enough gems!</p><br>";
 	}
 	?>
 
