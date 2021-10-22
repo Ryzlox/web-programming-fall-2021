@@ -26,9 +26,9 @@ session_unset();
 <p>Maybe try looking around a bit more?</p>
 </div>
 
-<div class="choice">
-<button><a href="A1.html">Go to the start</a></button>
-</div>
+
+<button class="back"><a href="A1.html">Go to the start</a></button>
+
 
 <audio controls autoplay>
 

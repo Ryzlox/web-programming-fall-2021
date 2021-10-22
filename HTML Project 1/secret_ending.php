@@ -28,9 +28,9 @@ session_unset();
 <p>This was the secret ending! Congratulations, and thank you for playing! Go check out the other endings!</p>
 </div>
 
-<div class="choice">
-<button><a href="A1.html">Go to the start</a></button>
-</div>
+
+<button class= "back"><a href="A1.html">Go to the start</a></button>
+
 
 <audio controls autoplay>
 

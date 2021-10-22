@@ -25,7 +25,7 @@ $_SESSION['gem 3'] = 1;
 <p>You unlocked the black door on the left.</p>
 <p>The key jams in the keyhole and won't come out. As you step through the doorway you are met with a series of poison dart traps aligned on the walls. With no antidote or help, you end up dying.</p>
 
-
+<p>You have collected a Gem!</p>
 <p>This was a bad ending! Try again from the start or go back and check out the other endings!</p>
 </div>
 

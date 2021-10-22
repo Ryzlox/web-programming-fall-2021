@@ -28,7 +28,7 @@ $_SESSION['gem 4'] = 1;
 <p>This door ends up leading you to an old bunker with a radio still intact. You're able to contact someone nearby and they're on the way to help you. </p>
 
 <p>A rescue team eventually digs you out of your underground maze, and gets you some well-earned food and medicine. You're free!</p>
-
+<p>You have collected a Gem!</p>
 <p>This was a good ending! You won the game! Try again from the start or go back and check out the other endings!</p>
 </div>
 
