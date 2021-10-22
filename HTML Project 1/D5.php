@@ -1,3 +1,7 @@
+<?php
+session_start():
+$_SESSION['gem 3'] = 1;
+?>
 <!DOCTYPE html>
 <html>
     <head>
