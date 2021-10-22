@@ -1,3 +1,7 @@
+<?pho
+session_start();
+$_SESSION['gem 4'] = 1;
+?>
 <!DOCTYPE html>
 <html>
     <head>
