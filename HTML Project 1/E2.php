@@ -35,8 +35,6 @@ session_start();
 		echo "<button><a href='failed_attempt.php'>Place your items into the door</a></button>";
 	}
 	?>
-
-<button><a href="A1.html">Go to the start</a></button>
 </div>
 <button class="back"><a href="C3.html">Back</a></button>
 
