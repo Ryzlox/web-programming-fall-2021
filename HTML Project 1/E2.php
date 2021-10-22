@@ -11,14 +11,6 @@ session_start();
 </head>
 
 <body>
-	
-	<?php
-	if(isset($_SESSION['gem 1']) && isset($_SESSION['gem 2']) && isset($_SESSION['gem 3']) && isset($_SESSION['gem 4'])) {
-		echo "<p>All gems are available!</p><br>";
-	} else {
-		echo "<p>You have not found enough gems!</p><br>";
-	}
-	?>
 
 <div>
     <div class="container">
@@ -36,10 +28,17 @@ session_start();
 </div>
 
 <div class="choice">
-<button class="back"><a href="D6.html">Place your items into the door</a></button>
-<button class="back"><a href="D6.html">Try</a></button>
+<?php
+	if(isset($_SESSION['gem 1']) && isset($_SESSION['gem 2']) && isset($_SESSION['gem 3']) && isset($_SESSION['gem 4'])) {
+		echo "<button><a href='secret_ending.php'>Place your items into the door</a></button>";
+	} else {
+		echo "<button><a href='failed_attempt.php'>Place your items into the door</a></button>";
+	}
+	?>
+
 <button><a href="A1.html">Go to the start</a></button>
 </div>
+<button class="back"><a href="C3.html">Back</a></button>
 
 
 <audio controls autoplay>
