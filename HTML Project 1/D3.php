@@ -27,7 +27,8 @@ $_SESSION['gem 2'] = 1;
 <p>You take this snaking pathway around a corner.</p>
 
 <p>As you walk, your foot steps on a booby trap! A net deploys from the ceiling and you get tangled in it! The net is too tough to bite through or break though. It looks like you're trapped.</p>
-<p>You have collected a Gem!</p>
+<p>You have collected a Gem!
+<img src="gem.jpg" alt="cave in" width="50" height="50"></p>
 <p>This was a bad ending! Try again from the start or go back and check out the other endings!</p>
 </div>
 

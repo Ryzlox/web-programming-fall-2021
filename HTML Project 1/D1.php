@@ -21,10 +21,13 @@ $_SESSION['gem 1'] = 1;
 
 <img src="collapse.jpg" alt="cave in" width="850" height="600">
 
+
+
 <div class="question">
 <p>You followed the light ahead of you.</p>
 <p>You end up entering a room lit up with torches. As you step inside, there is a loud rumble, and the path behind you collapses with rubble. With no food or water, you end up spending the rest of your days sitting in this cave, until you die.</p>
-<p>You have collected a Gem!</p>
+<p>You have collected a Gem!
+<img src="gem.jpg" alt="cave in" width="50" height="50"></p>
 <p>This was a bad ending! Try again from the start or go back and check out the other endings!</p>
 </div>
 
