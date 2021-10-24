@@ -18,12 +18,14 @@ session_unset();
         <h1>Adventure Maze Game</h1>
 	</div>
 
-<img src="water.gif" alt="Drowning" width="500" height="300">
+<img src="nyk0hx8stso21.gif" alt="Need more gems" width="500" height="300">
 
 <div class="question">
 <p>Seems like you don't have enough gems...</p>
 <p>The door doesn't budge at all. </p>
 <p>Maybe try looking around a bit more?</p>
+
+
 </div>
 
 
@@ -32,7 +34,7 @@ session_unset();
 
 <audio controls autoplay>
 
-  <source src="Scary Sounds Drowning.mp3" type="audio/mpeg">
+  <source src="Fail Sound Effect (128 kbps).mp3" type="audio/mpeg">
   
   browser does not support the audio
   

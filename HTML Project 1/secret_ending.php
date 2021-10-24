@@ -18,7 +18,7 @@ session_unset();
         <h1>Adventure Maze Game</h1>
 	</div>
 
-<img src="water.gif" alt="Drowning" width="500" height="300">
+<img src="Aladdin-disneyscreencaps.com-3266.jpg" alt="Gold" width="500" height="300">
 
 <div class="question">
 <p>The four gems fit into the door slots and the door slides open to reveal a cave lit up with lanterns.</p>
@@ -34,7 +34,7 @@ session_unset();
 
 <audio controls autoplay>
 
-  <source src="Scary Sounds Drowning.mp3" type="audio/mpeg">
+  <source src="Treasure Chest (128 kbps).mp3" type="audio/mpeg">
   
   browser does not support the audio
   

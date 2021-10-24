@@ -18,7 +18,7 @@ session_start();
         <h1>Adventure Maze Game</h1>
 	</div>
 
-<img src="water.gif" alt="Drowning" width="500" height="300">
+<img src="indi.JPG" alt="Thinking" width="500" height="300">
 
 <div class="question">
 <p>You went behind the bookshelf.</p>
@@ -41,7 +41,7 @@ session_start();
 
 <audio controls autoplay>
 
-  <source src="Scary Sounds Drowning.mp3" type="audio/mpeg">
+  <source src="The Idol Temple (128 kbps).mp3" type="audio/mpeg">
   
   browser does not support the audio
   
