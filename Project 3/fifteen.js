@@ -8,7 +8,6 @@ document.onreadystatechange = function () {
       var areaContents = document.getElementById("puzzlearea").children;
       var shuffleTrack = 0;
       var numberCount = 0;
-      // insert counter html
       document.getElementById("overall").insertAdjacentHTML('beforeend', "number of moves: <span id='numberCount'>0</span>");
 
       function checkComplete() {
