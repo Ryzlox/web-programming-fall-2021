@@ -3,7 +3,7 @@
        function timer(){
        if(timeleft <= -1){
         clearInterval(downloadTimer);
-            alert("Times Up!");
+            alert("Time's Up!");
 
        }else {
             document.getElementById("timer").innerHTML = timeleft + " seconds remaining";
@@ -52,7 +52,9 @@ document.onreadystatechange = function () {
       }
 
       function shuffle(shuffleTrack) 
-	  {
+      {
+          timeleft = 180;
+          timer();
         var rand = getElement();
         shiftPuzzlePiece.call(areaContents[rand]);
         if (shuffleTrack < 199) 
