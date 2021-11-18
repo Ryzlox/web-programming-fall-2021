@@ -10,13 +10,13 @@
          }
          timeleft -= 1;
        }
-       var audio = new Audio('Project 3_30 Second Timer With Jeopardy Thinking Music.mp3')
+       var audio = new Audio('30 Second Timer With Jeopardy Thinking Music.mp3')
               audio.loop = true;
-              audio.play();
 document.onreadystatechange = function () {
 		window.onload = function() {
 			shuffle(shuffleTrack);
 			downloadTimer = setInterval(timer, 1000);
+			audio.play();
 		};
 	
     if (document.readyState == "complete") {
