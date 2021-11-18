@@ -1,4 +1,8 @@
 document.onreadystatechange = function () {
+		window.onload = function() {
+			shuffle(shuffleTrack);
+		};
+	
     if (document.readyState == "complete") {
       var grid =  [[0,0,false],[100,0,false],[200,0,false],[300,0,false],
                    [0,100,false],[100,100,false],[200,100,false],[300,100,false],
@@ -148,6 +152,8 @@ document.onreadystatechange = function () {
         document.getElementById("puzzlearea").innerHTML = document.getElementById("puzzlearea").innerHTML + "<div class='empty'></div>"
         addEventListeners(getMovableCells());
       }
+	  
+
     document.getElementById("shufflebutton").onclick = function(){shuffle(shuffleTrack);
 	}
     initializeArea();
