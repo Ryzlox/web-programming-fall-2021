@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	<title>Fifteen Puzzle</title>
-		<link rel="stylesheet" type="text/css" href="stylesheet.css" />
-		<script type="text/javascript" src="fifteen.js"></script>
-	</head>
-	<body>
-		<div id="overall">
-			<div id="puzzlearea">
-				<div>1</div>  <div>2</div>  <div>3</div>  <div>4</div>
-				<div>5</div>  <div>6</div>  <div>7</div>  <div>8</div>
-				<div>9</div>  <div>10</div> <div>11</div> <div>12</div>
-				<div>13</div> <div>14</div> <div>15</div>
-			</div>
-			<div id="timer"></div>
-		<div id="controls">
-			<button id="shufflebutton" onClick = "shuffle() ">Shuffle puzzle and reset timer</button>
-		</div>
-	</div>                
-	</body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fifteen Puzzle</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body onload="initializeGame()">
+    <div id="wrapper">
+
+
+        <div id="main">
+            <div id="one"      class="tile">1</div>
+            <div id="two"      class="tile">2</div>
+            <div id="three"    class="tile">3</div>
+            <div id="four"     class="tile">4</div>
+            <div id="five"     class="tile">5</div>
+            <div id="six"      class="tile">6</div>
+            <div id="seven"    class="tile">7</div>
+            <div id="eight"    class="tile">8</div>
+            <div id="nine"     class="tile">9</div>
+            <div id="ten"      class="tile">10</div>
+            <div id="eleven"   class="tile">11</div>
+            <div id="twelve"   class="tile">12</div>
+            <div id="thirteen" class="tile">13</div>
+            <div id="fourteen" class="tile">14</div>
+            <div id="fifteen"  class="tile">15</div>
+            <div id="sixteen"  class="tile"></div>
+        </div>
+        <div id="timer"></div>
+    </div>
+
+    <script type="text/javascript" src="fifteen.js"></script>
+</body>
 </html>
