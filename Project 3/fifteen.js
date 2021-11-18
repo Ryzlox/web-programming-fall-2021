@@ -1,6 +1,22 @@
+    var downloadTimer;
+       var timeleft = 180;
+       function timer(){
+       if(timeleft <= -1){
+        clearInterval(downloadTimer);
+            alert("Times Up!");
+
+       }else {
+            document.getElementById("timer").innerHTML = timeleft + " seconds remaining";
+         }
+         timeleft -= 1;
+       }
+       var audio = new Audio('Project 3_30 Second Timer With Jeopardy Thinking Music.mp3')
+              audio.loop = true;
+              audio.play();
 document.onreadystatechange = function () {
 		window.onload = function() {
 			shuffle(shuffleTrack);
+			downloadTimer = setInterval(timer, 1000);
 		};
 	
     if (document.readyState == "complete") {
@@ -40,15 +56,16 @@ document.onreadystatechange = function () {
         var rand = getElement();
         shiftPuzzlePiece.call(areaContents[rand]);
         if (shuffleTrack < 199) 
-          { 
+          {
             shuffleTrack = shuffleTrack + 1;
-            shuffle(shuffleTrack) 
+            shuffle(shuffleTrack)
           }
           else 
 		  {
+
             shuffleTrack = 0;
             numberCount = 0; 
-            document.getElementById("numberCount").innerHTML = numberCount;          
+            document.getElementById("numberCount").innerHTML = numberCount;
           }
       }
 
@@ -151,11 +168,13 @@ document.onreadystatechange = function () {
         }
         document.getElementById("puzzlearea").innerHTML = document.getElementById("puzzlearea").innerHTML + "<div class='empty'></div>"
         addEventListeners(getMovableCells());
+
       }
 	  
 
     document.getElementById("shufflebutton").onclick = function(){shuffle(shuffleTrack);
 	}
     initializeArea();
+
   }
 }
