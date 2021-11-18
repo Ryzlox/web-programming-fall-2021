@@ -1,85 +1,62 @@
-html, body {
-    height: 100%;
+body {
+        background-color: white-space;
+        font-size: 20pt;
 }
 
-#wrapper {
-    margin: 5% auto;
-    width: 600px;
-
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+#control, #All, #puzzlearea {
+        width: 400px;
 }
 
-#main {
-    margin: auto;
-    width:400px;
-    height:400px;
-    position: relative;
+#control {
+        padding-top: 20px;
+        text-align: center;
 }
 
-.tile {
-    width:96px;
-    height:96px;
-    float: left;
-    text-align: center;
-    border: 2px black solid;
-    vertical-align: middle;
-    font-size: 32px;
-    font-family: sans-serif;
-    line-height: 100px;
-    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
-}
-
-.moveable:hover{
-    border: 2px red solid;
-    text-decoration-line: underline;
-    color: #006600;
-}
 h1 {
-    text-align: center;
-    margin: auto;
+        margin: 15px 0px;
+        text-align: center;
 }
 
-button, select {
-    display: block;
-    margin: 10px auto;
+#All {
+        margin-left: auto;
+        margin-right: auto;
 }
 
-img {
-    height: 30px;
-    float: right;
+#puzzlearea {
+        font-family: sans-serif;
+        font-size: 44pt;
+        height: 500px;
+        padding: 0px;
+        position: relative;
+		cursor: pointer;
 }
 
-a {
-    text-decoration: none;
-    border:0;
+.puzzlepiece {
+        background-image: url(super-mario.jpg);
+        border: 5px solid black;
+        height: 100px;
+        line-height: 100px;
+        position: absolute;
+        text-align: center;
+        vertical-align: middle;
+        width: 100px;
+}
+.puzzlepiecehover {
+        border-color: red;
+        color: #660066;
+        font-weight: bold;
+        text-decoration: underline;
+}
+
+#w3c {
+        text-align: right;
+}
+
+#w3c img {
+        border: none;
 }
 
 .super-mario { background: url("super-mario.jpg"); }
 .luigi       { background: url("luigi.jpg");       }
 .bowser      { background: url("bowser.jpg");      }
 .toad        { background: url("toad.jpg");        }
-
-#one      { background-position: 0      0;      }
-#two      { background-position: -100px 0;      }
-#three    { background-position: -200px 0;      }
-#four     { background-position: -300px 0;      }
-#five     { background-position: 0      -100px; }
-#six      { background-position: -100px -100px; }
-#seven    { background-position: -200px -100px; }
-#eight    { background-position: -300px -100px; }
-#nine     { background-position: 0      -200px; }
-#ten      { background-position: -100px -200px; }
-#eleven   { background-position: -200px -200px; }
-#twelve   { background-position: -300px -200px; }
-#thirteen { background-position: 0      -300px; }
-#fourteen { background-position: -100px -300px; }
-#fifteen  { background-position: -200px -300px; }
-#sixteen  { border: 2px solid white !important; }
-
-
-
-
