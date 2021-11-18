@@ -1,5 +1,5 @@
 var downloadTimer;
-var timeleft = 180;
+var timeleft = 540;
 function timer() {
   if (timeleft <= -1) {
     clearInterval(downloadTimer);
@@ -28,7 +28,7 @@ document.onreadystatechange = function () {
     var areaContents = document.getElementById("puzzlearea").children;
     var shuffleTrack = 0;
     var numberCount = 0;
-    document.getElementById("overall").insertAdjacentHTML('beforeend', "number of moves: <span id='numberCount'>0</span>");
+    document.getElementById("overall").insertAdjacentHTML('beforeend', "Number of moves: <span id='numberCount'>0</span>");
 
     function checkComplete() {
       var check = ""
@@ -47,14 +47,14 @@ document.onreadystatechange = function () {
     }
 
     function celebrate() {
-      alert("Congratulations!!");
+      alert("Congratulations!");
       document.getElementById("puzzlearea").innerHTML = "<div>" +
         "<img onclick='location.reload();' src='super-mario.jpg'/></div><br /><h1 onclick='location.reload();'>Good Job</h1><br/><img src='won.gif'/>";
       document.getElementById("shufflebutton").outerHTML = ""
     }
 
     function shuffle(shuffleTrack) {
-      timeleft = 180;
+      timeleft = 540;
       timer();
       var rand = getElement();
       shiftPuzzlePiece.call(areaContents[rand]);
@@ -63,7 +63,6 @@ document.onreadystatechange = function () {
         shuffle(shuffleTrack)
       }
       else {
-
         shuffleTrack = 0;
         numberCount = 0;
         document.getElementById("numberCount").innerHTML = numberCount;
@@ -164,8 +163,7 @@ document.onreadystatechange = function () {
       addEventListeners(getMovableCells());
 
     }
-
-
+	
     document.getElementById("shufflebutton").onclick = function () {
       shuffle(shuffleTrack);
     }
