@@ -28,6 +28,7 @@ h1 {
         height: 500px;
         padding: 0px;
         position: relative;
+		cursor: pointer;
 }
 
 .puzzlepiece {
