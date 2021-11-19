@@ -64,10 +64,9 @@ document.onreadystatechange = function () {
 	
 	function celebrate() {
       alert("Good Job!");
-      document.getElementById("puzzlearea").innerHTML = "<div>" +
-        "<img onClick='location.reload();' src='super-mario.jpg'/></div><br/><h1 onClick='location.reload();'>Good Job</h1><br/><img src='won.gif'/>";
-      document.getElementById("controls").outerHTML = "";
-	  document.getElementById("timer").outerHTML = "";
+	  document.getElementById("overall").outerHTML= "";
+      document.getElementById("celebrate").innerHTML = "<div>" +
+        "<img onClick='location.reload();' src='super-mario.jpg'/></div><br/><h1 class='celebrate' onClick='location.reload();'>Good Job</h1><br/><img src='won.gif'/>";
     }
 	
 	document.getElementById("solveButton").onclick = function () {
