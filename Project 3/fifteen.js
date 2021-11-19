@@ -46,13 +46,6 @@ document.onreadystatechange = function () {
       alert("hey")
     }
 
-    function celebrate() {
-      alert("Congratulations!");
-      document.getElementById("puzzlearea").innerHTML = "<div>" +
-        "<img onclick='location.reload();' src='super-mario.jpg'/></div><br /><h1 onclick='location.reload();'>Good Job</h1><br/><img src='won.gif'/>";
-      document.getElementById("shufflebutton").outerHTML = ""
-    }
-
     function shuffle(shuffleTrack) {
       timeleft = 540;
       timer();
@@ -68,6 +61,19 @@ document.onreadystatechange = function () {
         document.getElementById("numberCount").innerHTML = numberCount;
       }
     }
+	
+	function celebrate() {
+      alert("Good Job!");
+      document.getElementById("puzzlearea").innerHTML = "<div>" +
+        "<img onClick='location.reload();' src='super-mario.jpg'/></div><br/><h1 onClick='location.reload();'>Good Job</h1><br/><img src='won.gif'/>";
+      document.getElementById("controls").outerHTML = "";
+	  document.getElementById("timer").outerHTML = "";
+    }
+	
+	document.getElementById("solveButton").onclick = function () {
+      celebrate();
+    }
+	
 
     function getElement() {
       var movables = getMovableCells();
