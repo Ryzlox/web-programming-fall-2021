@@ -19,11 +19,11 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
      die("Can't Connect: " . $conn->connect_error);
 }
-$sql = "SELECT username from Customer;";
+$sql = "SELECT username from basket;";
 $customer = $conn->query($sql);
 $cus = $customer->fetch_assoc();
 $user =$cus["username"];
-echo "Welcome ".$username."!";
+echo "Welcome ".$user."!";
 
 
 
@@ -60,15 +60,15 @@ if($result->num_rows > 0){
 $conn->close();
 ?>
 <br>
-<form action="inventory.php" method="post">
+<form action="viewcart.php" method="post">
     <label for="carName">Choose a Car:</label>
     <select name="carName" id="carName">
         <option value="Chevrolet Spark">Chevrolet Spark</option>
-        <option value="BMW_430i">BMW 430i</option>
+        <option value="BMW 430i">BMW 430i</option>
         <option value="Tiguan">VW Tiguan</option>
         <option value="VW Jetta">VW Jetta</option>
     </select>
 </form>
-<input type="button" onclick="location.href='inventory.php'" value="Confirm">
+<input type="button" onclick="location.href='viewcart.php'" value="Confirm">
 </body>
 </html>

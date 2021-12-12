@@ -18,7 +18,7 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
      die("Can't Connect: " . $conn->connect_error);
 }
-$carName=$_POST["carName"];
+$cName=$_POST["carName"];
 
 
 
