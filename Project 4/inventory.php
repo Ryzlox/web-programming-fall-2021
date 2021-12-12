@@ -28,11 +28,6 @@ echo "Welcome ".$user."!";
 
 
 $carName=$_POST["carName"];
-$sql = mysqli_query("SELECT carName, price_per_day from inventory where $carName = carName");
-$retrv= $conn->query($sql);
-$c=$retrv["carName"];
-$p=$retrv["price_per_day"];
-echo $retrv;
 
 $sql = "SELECT carName, type, price_per_day from inventory";
 $result = $conn->query($sql);
@@ -54,13 +49,13 @@ if($result->num_rows > 0){
              echo "<tr><td>".$car."</td><td>".$type."</td><td>".$price."</td></tr>";
     }
     	 echo "</table>";
-}else{
+    }else{
     echo "0 results";
-}
+    }
 $conn->close();
 ?>
 <br>
-<form action="viewcart.php" method="post">
+<form action="car_added.php" method="post">
     <label for="carName">Choose a Car:</label>
     <select name="carName" id="carName">
         <option value="Chevrolet Spark">Chevrolet Spark</option>
@@ -69,6 +64,6 @@ $conn->close();
         <option value="VW Jetta">VW Jetta</option>
     </select>
 </form>
-<input type="button" onclick="location.href='viewcart.php'" value="Confirm">
+<a href="car_added.php"><input type="button" value="Confirm"></a>
 </body>
 </html>
