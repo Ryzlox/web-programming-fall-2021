@@ -19,7 +19,7 @@ if ($conn->connect_error) {
      die("Can't Connect: " . $conn->connect_error);
 }
 $cName=$_POST["carName"];
-
+$sql ="INSERT INTO "
 
 
 
