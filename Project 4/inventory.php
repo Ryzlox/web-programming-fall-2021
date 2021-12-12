@@ -19,6 +19,14 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
      die("Can't Connect: " . $conn->connect_error);
 }
+$sql = "SELECT username from Customer;";
+$customer = $conn->query($sql);
+$cus = $customer->fetch_assoc();
+$user =$cus["username"];
+echo "Welcome ".$username."!";
+
+
+
 $carName=$_POST["carName"];
 $sql = mysqli_query("SELECT carName, price_per_day from inventory where $carName = carName");
 $retrv= $conn->query($sql);
@@ -49,9 +57,6 @@ if($result->num_rows > 0){
 }else{
     echo "0 results";
 }
-
-
-
 $conn->close();
 ?>
 <br>
@@ -64,6 +69,6 @@ $conn->close();
         <option value="VW Jetta">VW Jetta</option>
     </select>
 </form>
-<input type="button" value="Confirm">
+<input type="button" onclick="location.href='inventory.php'" value="Confirm">
 </body>
 </html>
