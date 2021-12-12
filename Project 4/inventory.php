@@ -25,10 +25,6 @@ $cus = $customer->fetch_assoc();
 $user =$cus["username"];
 echo "Welcome ".$user."!";
 
-
-
-$carName=$_POST["carName"];
-
 $sql = "SELECT carName, type, price_per_day from inventory";
 $result = $conn->query($sql);
 if($result->num_rows > 0){
