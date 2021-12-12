@@ -48,18 +48,21 @@ if($result->num_rows > 0){
     }else{
     echo "0 results";
     }
+
+
 $conn->close();
 ?>
 <br>
 <form action="car_added.php" method="post">
-    <label for="carName">Choose a Car:</label>
-    <select name="carName" id="carName">
+    <label for="cName">Choose a Car:</label>
+    <select name="carName">
         <option value="Chevrolet Spark">Chevrolet Spark</option>
         <option value="BMW 430i">BMW 430i</option>
         <option value="Tiguan">VW Tiguan</option>
         <option value="VW Jetta">VW Jetta</option>
+        <input type="submit">
     </select>
 </form>
-<a href="car_added.php"><input type="button" value="Confirm"></a>
+
 </body>
 </html>
