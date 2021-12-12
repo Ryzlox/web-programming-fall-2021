@@ -19,12 +19,11 @@ if ($conn->connect_error) {
 }
 $name=$_POST['carName'];
 echo "".$name."<br>";
-$sql = "INSERT INTO basket(carName) VALUES ('$name')";
-if ($conn->query($sql) === TRUE) {
-    echo "Car added";
-} else {
-    echo "Car not added";
-}
+$sql = "INSERT INTO basket(carName) VALUES (?)";
+$stmt= $conn->prepare($sql);
+$stmt->bind_param("s", $name);
+$stmt->execute();
+
 
 $sql= "SELECT * FROM basket";
 $result = $conn->query($sql);

@@ -26,6 +26,9 @@ $carName=$_POST['carName'];
 echo "You chose ".$carName. " ";
 
 $sql = "INSERT INTO basket(carName) VALUES ('$name')";
+$stmt= $conn->prepare($sql);
+$stmt->bind_param("sss", $name, $email, $password);
+$stmt->execute();
 if ($conn->query($sql) === TRUE) {
     echo "Car added";
 } else {
