@@ -17,10 +17,20 @@
 $conn->close();
 ?>
 
-<input type="button" onclick="location.href='register.php'" value="Make a new acccount">
-<input type="button" onclick="location.href='login.php'" value="Login">
-<input type="button" onclick="location.href='checkout.php'" value="Visit your cart">
+<button id = "button1">Make a new acccount"</button>
+<button id = "button2">Login</button>
 
+
+<script type="text/javascript">
+    document.getElementById("button1").onclick = function () {
+        location.href = "register.php";
+    };
+	
+    document.getElementById("button2").onclick = function () {
+        location.href = "login.php";
+    };
+
+</script>
 
 </body>
 </html>
