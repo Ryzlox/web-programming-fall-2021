@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
+=======
+     <link rel="stylesheet" href="hw4.css">
+>>>>>>> main
     <title>car added</title>
 </head>
 <body>
@@ -17,6 +21,7 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
      die("Can't Connect: " . $conn->connect_error);
 }
+<<<<<<< HEAD
 $sql = "SELECT username from basket";
  $customer = $conn->query($sql);
  $cus = $customer->fetch_assoc();
@@ -103,6 +108,11 @@ if ($result->num_rows > 0) {
 } else {
      echo "0 results";
 }*/
+=======
+$carName=$_POST["carName"];
+
+
+>>>>>>> main
 
 
 

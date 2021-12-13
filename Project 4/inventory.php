@@ -19,11 +19,20 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
      die("Can't Connect: " . $conn->connect_error);
 }
+<<<<<<< HEAD
 $sql = "SELECT username from basket;";
 $customer = $conn->query($sql);
 $cus = $customer->fetch_assoc();
 $user =$cus["username"];
 echo "Welcome ".$user."!";
+=======
+$carName=$_POST["carName"];
+$sql = mysqli_query("SELECT carName, price_per_day from inventory where $carName = carName");
+$retrv= $conn->query($sql);
+$c=$retrv["carName"];
+$p=$retrv["price_per_day"];
+echo $retrv;
+>>>>>>> main
 
 $sql = "SELECT carName, type, price_per_day from inventory";
 $result = $conn->query($sql);
@@ -45,14 +54,22 @@ if($result->num_rows > 0){
              echo "<tr><td>".$car."</td><td>".$type."</td><td>".$price."</td></tr>";
     }
     	 echo "</table>";
+<<<<<<< HEAD
     }else{
     echo "0 results";
     }
+=======
+}else{
+    echo "0 results";
+}
+
+>>>>>>> main
 
 
 $conn->close();
 ?>
 <br>
+<<<<<<< HEAD
 <form action="test.php" method="post">
     <label for="cName">Choose a Car:</label>
     <select name="carName">
@@ -64,5 +81,17 @@ $conn->close();
     </select>
 </form>
 
+=======
+<form action="inventory.php" method="post">
+    <label for="carName">Choose a Car:</label>
+    <select name="carName" id="carName">
+        <option value="Chevrolet Spark">Chevrolet Spark</option>
+        <option value="BMW_430i">BMW 430i</option>
+        <option value="Tiguan">VW Tiguan</option>
+        <option value="VW Jetta">VW Jetta</option>
+    </select>
+</form>
+<input type="button" value="Confirm">
+>>>>>>> main
 </body>
 </html>

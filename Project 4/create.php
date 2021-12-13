@@ -27,7 +27,10 @@ $sql = "CREATE TABLE Customer
           password VARCHAR(10) NOT NULL,
           PRIMARY KEY (username)
         );
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 ";
 if ($conn->query($sql) === TRUE) {
 } else {
@@ -39,10 +42,16 @@ $sql = "CREATE TABLE inventory
           type VARCHAR(10) NOT NULL,
           carName VARCHAR(20) NOT NULL,
           numofcars INT NOT NULL,
+<<<<<<< HEAD
           price_per_day INT NOT NULL,
           PRIMARY KEY (carName)
         );
 
+=======
+          price INT NOT NULL,
+          PRIMARY KEY (carName)
+        );
+>>>>>>> main
 ";
 if ($conn->query($sql) === TRUE) {
 } else {
@@ -50,12 +59,20 @@ if ($conn->query($sql) === TRUE) {
 }
 $sql = "CREATE TABLE parking_spots
         (
+<<<<<<< HEAD
           spotnum INT NOT NULL,
           vip_section INT NOT NULL,
           spot_type INT NOT NULL,
           PRIMARY KEY (spotnum)
         );
 
+=======
+          spotnum VARCHAR(10) NOT NULL,
+          vip_section VARCHAR(3) NOT NULL,
+          spot_type VARCHAR(10) NOT NULL,
+          PRIMARY KEY (spotnum)
+        );
+>>>>>>> main
 ";
 if ($conn->query($sql) === TRUE) {
 } else {
@@ -63,11 +80,23 @@ if ($conn->query($sql) === TRUE) {
 }
 $sql = "CREATE TABLE reservation
         (
+<<<<<<< HEAD
           numdays INT NOT NULL,
         price_per_day INT NOT NULL,
         vip_price_per_day INT NOT NULL
         );
 
+=======
+          timeslot VARCHAR(10) NOT NULL,
+          price_per_day INT NOT NULL,
+          vip_section VARCHAR(3) NOT NULL,
+          spotnum VARCHAR(10) NOT NULL,
+          username VARCHAR(20) NOT NULL,
+          PRIMARY KEY (spotnum, username),
+          FOREIGN KEY (spotnum) REFERENCES parking_spots(spotnum),
+          FOREIGN KEY (username) REFERENCES Customer(username)
+        );
+>>>>>>> main
 ";
 if ($conn->query($sql) === TRUE) {
 } else {
@@ -84,13 +113,20 @@ $sql="CREATE TABLE confirm_res
       PRIMARY KEY (username),
       FOREIGN KEY (username) REFERENCES Customer(username)
       );
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
       ";
 if ($conn->query($sql) === TRUE) {
 } else {
 
 }
+<<<<<<< HEAD
  pick_car may not be used
+=======
+
+>>>>>>> main
 $sql = "CREATE TABLE pick_car
         (
           numchosen INT NOT NULL,
@@ -106,6 +142,7 @@ if ($conn->query($sql) === TRUE) {
 
 $sql = "CREATE TABLE basket
         (
+<<<<<<< HEAD
         username VARCHAR(20) NOT NULL,
         price_per_day INT NOT NULL,
         carName VARCHAR(20) NOT NULL,
@@ -116,6 +153,15 @@ $sql = "CREATE TABLE basket
         );
 
 ";
+=======
+          username VARCHAR(20) NOT NULL,
+          carName VARCHAR(20) NOT NULL,
+          numchosen INT NOT NULL,
+          PRIMARY KEY (username, carName, numchosen),
+          FOREIGN KEY (username) REFERENCES Customer(username),
+          FOREIGN KEY (carName, numchosen) REFERENCES pick_car(carName, numchosen)
+        );";
+>>>>>>> main
 if ($conn->query($sql) === TRUE) {
 } else {
 
