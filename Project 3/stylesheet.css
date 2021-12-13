@@ -1,3 +1,4 @@
+
 body {
         background-color: white;
         font-size: 20pt;
@@ -79,4 +80,5 @@ h1 {
 .super-mario { background: url("super-mario.jpg"); }
 .luigi       { background: url("luigi.jpg");       }
 .bowser      { background: url("bowser.jpg");      }
+
 .toad        { background: url("toad.jpg");        }
