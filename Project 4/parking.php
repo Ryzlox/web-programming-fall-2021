@@ -49,12 +49,18 @@ $conn->close();
 ?>
 <br>
 <form action="chosen.php" method="post">
-    <label for="spot">Choose a Car:</label>
-    <select name="spot">
-        <option value="1">Chevrolet Spark</option>
-        <option value="2">BMW 430i</option>
-        <option value="3">VW Tiguan</option>
-        <option value="4">VW Jetta</option>
+    Pick spot number: <input type="number" name="spotnum">
+    <br>
+    How many days?
+    <select name="numdays">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+    </select>
         <input type="submit">
     </select>
 </form>

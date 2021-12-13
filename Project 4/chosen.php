@@ -19,7 +19,15 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
      die("Can't Connect: " . $conn->connect_error);
 }
+$spotnum=$_REQUEST['spotnum'];
+$numdays=$__REQUEST['numdays'];
 
+$query="SELECT spot_type FROM parking_spots WHERE spotnum=?";
+$stmt=$conn->prepare($query);
+$stmt->bind_param("s", $spotnum);
+$stmt->execute();
+
+$sql="INSERT INTO parking_spots SET spotnum='$spotnum',  "
 
 $conn->close();
 ?>
