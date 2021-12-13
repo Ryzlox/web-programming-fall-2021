@@ -17,16 +17,26 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
      die("Can't Connect: " . $conn->connect_error);
 }
+$sql = "SELECT username from basket;";
+$customer = $conn->query($sql);
+$cus = $customer->fetch_assoc();
+$user =$cus["username"];
+echo "Welcome ".$user."!";
 $name=$_POST['carName'];
-echo "".$name."<br>";
-$sql = "INSERT INTO basket(carName) VALUES (?)";
+echo "<br>".$name."<br>";
+
+/*$sql = "INSERT INTO basket(carName) VALUES (?)";
 $stmt= $conn->prepare($sql);
 $stmt->bind_param("s", $name);
+$stmt->execute();*/
+
+
+$sql= "SELECT * FROM basket where username= ?";
+$stmt= $conn->prepare($sql);
+$stmt->bind_param("s", $user);
 $stmt->execute();
+$result = $stmt->get_result();
 
-
-$sql= "SELECT * FROM basket";
-$result = $conn->query($sql);
 if ($result->num_rows > 0) {
 	echo "<table><tr><th>Customer</th><th>Price pr day</th><th>Car Name</th><th>Car Type</th></tr>";
      while($row = $result->fetch_assoc()) {

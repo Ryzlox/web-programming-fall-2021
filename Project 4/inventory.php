@@ -53,7 +53,7 @@ if($result->num_rows > 0){
 $conn->close();
 ?>
 <br>
-<form action="car_added.php" method="post">
+<form action="test.php" method="post">
     <label for="cName">Choose a Car:</label>
     <select name="carName">
         <option value="Chevrolet Spark">Chevrolet Spark</option>
