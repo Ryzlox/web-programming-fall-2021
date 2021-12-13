@@ -6,7 +6,9 @@
     <title>Rent Car</title>
 </head>
 <body>
+
 <h1>Pick a rental</h1>
+
 <?php
 $servername = "localhost";
 $username = "ajohns9";
@@ -19,6 +21,8 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
      die("Can't Connect: " . $conn->connect_error);
 }
+
+
 $carName=$_POST["carName"];
 $sql = mysqli_query("SELECT carName, price_per_day from inventory where $carName = carName");
 $retrv= $conn->query($sql);
@@ -65,5 +69,6 @@ $conn->close();
     </select>
 </form>
 <input type="button" value="Confirm">
+
 </body>
 </html>

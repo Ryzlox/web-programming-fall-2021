@@ -63,6 +63,7 @@ h1 {
 .puzzlepiecehover {
         border-color: red;
         color: #006600;
+
         font-weight: bold;
         text-decoration: underline;
 }
