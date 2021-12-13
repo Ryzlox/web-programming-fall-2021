@@ -26,8 +26,15 @@ $query="SELECT spot_type FROM parking_spots WHERE spotnum=?";
 $stmt=$conn->prepare($query);
 $stmt->bind_param("s", $spotnum);
 $stmt->execute();
+$result = $stmt->get_result();
+$parking = $result->fetch_assoc();
+$spot_type=$parking['spot_type'];
+echo " ".$spot_type."<br>";
+echo " ".$spotnum."<br>";
+echo " ".$numdays."<br>";
 
-$sql="INSERT INTO parking_spots SET spotnum='$spotnum',  "
+
+//$sql="INSERT INTO confirm_res SET spotnum='$spotnum', spot_type='$spot_type'";
 
 $conn->close();
 ?>
