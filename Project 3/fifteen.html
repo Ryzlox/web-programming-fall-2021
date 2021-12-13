@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -10,13 +11,13 @@
 			<div id="puzzlearea">
 				<div item="1">1</div>
 				  <div item="2">2</div>
-				    <div item="3">3</div> 
+				    <div item="3">3</div>
 					 <div item="4">4</div>
 				<div item="5">5</div>
 				  <div  item="6">6</div>
 				    <div  item="7">7</div>
 					  <div  item="8">8</div>
-				<div  item="9">9</div> 
+				<div  item="9">9</div>
 				 <div  item="10">10</div>
 				  <div item="11">11</div>
 				   <div item="12">12</div>
@@ -24,9 +25,39 @@
 			</div>
 			<div id="timer"></div>
 		<div id="controls">
-			<button id="shufflebutton" onClick = "shuffle() ">Shuffle puzzle and reset timer</button>
+			<button id="shufflebutton" onClick = "shuffle()">Shuffle puzzle and reset timer</button>
+			<button id="solveButton" onClick = "celebrate()">Instantly solve puzzle</button>
 		</div>
-	</div>                
+	</div>
+
+	<div id="celebrate"></div>
+
+<p>This file was last edited on: <span id="demo"></span>.</p>
+
+<script>
+document.getElementById("demo").innerHTML = document.lastModified;
+</script>
+
+<p id="demo">To learn why we chose this specific project click the button below!</p>
+
+<button onclick="myFunction()">Click Here!</button>
+
+<script>
+function myFunction() {
+  document.open("text/html","replace");
+  document.write("<h2>Why was this project was chosen?</h2>");
+  document.write("<p>Our group chose the Fifteen Puzzle project because our prevous projects also dealt with puzzles. Since our group name is The Maze Runners, we wanted to keep in line with our maze and puzzle theme we've had so far this semester.</p>");
+  document.close();
+}
+</script>
+
+<div id="w3c">
+                        <a href="http://validator.w3.org/check/referer"><img class="w3c" src="w3c-xhtml.png" alt="Valid XHTML 1.1" /></a>
+                        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcodd.cs.gsu.edu%2F%7Enpappachristou1%2FProject03%2Ffifteen.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"><img class="w3c" src="w3c-css.png" alt="Valid CSS" /></a>
+                        <a href="http://www.cs.washington.edu/education/courses/cse190m/08sp/jslint.html"><img src="jslint.png" alt="JavaScript Lint" /></a>
+                </div>
 	
+
 	</body>
+
 </html>

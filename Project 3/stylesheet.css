@@ -1,5 +1,6 @@
+
 body {
-        background-color: white-space;
+        background-color: white;
         font-size: 20pt;
 }
 
@@ -20,6 +21,25 @@ h1 {
 #All {
         margin-left: auto;
         margin-right: auto;
+}
+
+.celebrate {
+	text-align: center;
+	animation: txt 7s ease-out infinite normal;
+}
+@keyframes txt{
+	0%{
+		transform:scale(0.9);
+	}
+	25%{
+		transform:scale(2);
+	}
+	70%{
+		transform:scale(0.9);
+	}
+	100%{
+		transform:scale(0.9);
+	}
 }
 
 #puzzlearea {
@@ -43,7 +63,8 @@ h1 {
 }
 .puzzlepiecehover {
         border-color: red;
-        color: #660066;
+        color: #006600;
+
         font-weight: bold;
         text-decoration: underline;
 }
@@ -59,4 +80,5 @@ h1 {
 .super-mario { background: url("super-mario.jpg"); }
 .luigi       { background: url("luigi.jpg");       }
 .bowser      { background: url("bowser.jpg");      }
+
 .toad        { background: url("toad.jpg");        }
